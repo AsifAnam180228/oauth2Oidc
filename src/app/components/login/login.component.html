@@ -1,0 +1,11 @@
+<h1>
+  Get access token
+</h1>
+
+<button class="btn btn-primary" (click)="handleLoginClick()">
+  {{authService.isLoggedIn ? 'Logout' : 'Login'}}
+</button>
+
+<button class="btn btn-primary" (click)="handleAccessTokenClick()" *ngIf="authService.isLoggedIn">
+  Get Access Token
+</button>
